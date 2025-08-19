@@ -1,0 +1,24 @@
+data_logger_node:
+  ros__parameters:
+    # Map name for automatic file naming (will be combined with timestamp)
+    map_name: "tester_map"
+    
+    # Auto-save directory (relative to package share directory)
+    auto_save_dir: "auto_save"
+    
+    # Topic names
+    laser_scan_topic: "/scan"
+    polar_grid_topic: "/polar_grid"
+    path_with_velocity_topic: "/planned_path_with_velocity"
+    
+    # Data configuration
+    expected_scan_points: 1080
+    expected_grid_points: 1080
+    expected_path_points: 16
+    
+    # File options
+    precision: 5
+    flush_immediately: true
+    
+    # Auto filename generation (if true, ignores output_csv_file)
+    enable_auto_filename: true

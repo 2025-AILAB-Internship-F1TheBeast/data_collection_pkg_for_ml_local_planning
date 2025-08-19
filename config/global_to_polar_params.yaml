@@ -1,0 +1,23 @@
+global_to_polar_node:
+  ros__parameters:
+    # Path to CSV file containing waypoints
+    path_csv_file: "$(find-pkg-share global_to_polar_cpp)/line/slam_tool_box.csv"
+    
+    # Number of waypoints to look ahead for path following
+    lookahead_points: 20
+    
+    # Search window size for finding closest waypoint
+    search_window: 10
+    
+    # Topic names
+    odom_topic: "/pf/pose/odom"
+    polar_grid_topic: "/polar_grid"
+    
+    # Frame ID for polar grid messages
+    frame_id: "base_link"
+    
+    # Polar grid configuration
+    polar_grid:
+      size: 1080
+      min_angle_deg: -135.0
+      max_angle_deg: 135.0
