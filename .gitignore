@@ -1,5 +1,5 @@
-# Ignore CSV data files in auto_save directory
-auto_save/*.csv
+# Ignore all files in auto_save directory
+auto_save/*
 
 # Keep the directory structure but ignore content
 !auto_save/.gitkeep
